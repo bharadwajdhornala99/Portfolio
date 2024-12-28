@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+      #about p {
+        margin-bottom: 1.5rem; /* Adds space after each paragraph */
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Bharadwaj Dhornala</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <nav id="main-nav">
+      <div class="logo"></div>
+      <div class="main-menu">
+        <div class="main-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpeg" alt=" profile picture" wi/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Bharadwaj Dhornala</h1>
+        <p class="section__text__p2">Data Enthusiast</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/bharadwajd/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/bharadwajdhornala'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-me-pic.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              I am an enthusiastic and dedicated data professional passionate about leveraging technology to derive actionable insights from complex data sets. With over three years of hands-on experience in data science and analytics, I have honed my skills in Python, SQL, and cloud computing platforms such as AWS.
+              My academic journey, culminating in a Master's degree in Computer Science at the University of North Carolina at Charlotte, has equipped me with a strong foundation in computational problem-solving and advanced analytics techniques.
+            </p>
+            <p>
+              My professional experience includes roles as a Data Science Analyst and Research Analyst, where I utilized skills like Python, SQL and tools like Apache Spark, Hadoop, and Snowflake to design scalable data solutions.
+              I have also developed AI-driven models, implemented end-to-end data pipelines, and created interactive dashboards using tools like Tableau and Power BI, which significantly improved decision-making processes for stakeholders.
+            </p>
+            <p>
+              Apart from my professional experience, I have worked on innovative projects like LinkedInsight, Pixel2Speech and many more. These projects reflect my ability to merge technical skills with creativity to solve real-world problems effectively.
+            </p>
+            <p>
+              Beyond work, I am intrigued by emerging technologies like Generative AI and Big Data frameworks, always seeking to expand my knowledge and apply it meaningfully. I am actively seeking opportunities to contribute my expertise to organizations focused on data-driven innovation.
+              I aspire to work in a challenging environment that fosters growth and encourages creative solutions to drive impactful results.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <p class="section__text__p1">My Academic Journey</p>
+      <h1 class="title" style="margin-bottom: 40px;">Education</h1>
+    
+      <!-- Master's Degree Entry -->
+      <div class="education-entry" style="margin-bottom: 70px;">
+        <img src="./assets/uncc.jpeg" alt="Master's college" class="education-image" />
+        <div class="education-details">
+          <h2 class="education-degree">Master of Science in Computer Science</h2>
+          <h3 class="education-university">University of North Carolina at Charlotte</h3>
+          <p class="education-duration">August 2023 - May 2024</p>
+        </div>
+      </div>
+    
+      <!-- Bachelor's Degree Entry -->
+      <div class="education-entry">
+        <img src="./assets/iiitp.png" alt="Bachelor's College" class="education-image" />
+        <div class="education-details">
+          <h2 class="education-degree">Bachelor of Technology in Computer Science</h2>
+          <h3 class="education-university">Indian Institute of Information Technology, Pune</h3>
+          <p class="education-duration">June 2016 - July 2020</p>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+    
+      <div class="experience-details-container">
+        <!-- Experience Entry 1 -->
+        <div class="experience-entry">
+          <div class="entry-header" onclick="toggleDetails('entry1-details')">
+            <h2 class="experience-company">Data Analyst, Accenture</h2>
+            <p class="experience-duration">August 2020 - August 2023</p>
+          </div>
+          <div class="entry-details" id="entry1-details" style="display: none;">
+            <ul>
+              <li>Developed and deployed Spark jobs using Python and PySpark, achieving a 10% reduction in processing time compared to traditional MapReduce pipelines, enhancing data processing efficiency and scalability.</li>
+              <li>Managed the end-to-end data science lifecycle by overseeing data collection, preprocessing, feature engineering, model development, evaluation, and deployment using Python and Apache Spark. Leveraged MLflow for model tracking and deployment while utilizing Docker for scalable, production-ready deployment solutions.</li>
+              <li>Created multiple proofs of concept and optimized complex Python scripts to improve accuracy and performance of data processing tasks, ensuring high-quality deliverables.</li>
+              <li>Executed efficient SQL queries on Snowflake and AWS Athena to analyze large datasets stored in cloud environments, delivering timely insights to stakeholders and supporting data-driven decision-making.</li>
+              <li>Employed Spark SQL, DataFrames, and transformations to perform complex data manipulations, achieving improved processing speed and efficiency.</li>
+              <li>Automated and orchestrated data pipelines using Apache Airflow, significantly enhancing data processing efficiency and minimizing manual intervention, ensuring seamless data flow and consistency across projects.</li>
+              <li>Designed and implemented interactive data visualizations and dashboards utilizing Matplotlib, Seaborn, Tableau, and Power BI to convey complex data insights and trends to team members and stakeholders.</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Experience Entry 2 -->
+        <div class="experience-entry">
+          <div class="entry-header" onclick="toggleDetails('entry2-details')">
+            <h2 class="experience-company">Research Analyst, Accenture Innovation Hub</h2>
+            <p class="experience-duration">January 2020 - August 2020</p>
+          </div>
+          <div class="entry-details" id="entry2-details" style="display: none;">
+            <ul>
+              <li>Developed an AI-driven ensemble model, <a href="https://arxiv.org/abs/2203.03157" target="_blank"><strong>SingleSketch2Mesh</strong></a>, for generating 3D models from hand-drawn sketches.</li>
+              <li>Utilized Generative Adversarial Networks (GANs) and Encoder-Decoder architectures to create high-quality 3D mesh representations.</li>
+              <li>Conducted comprehensive data preprocessing, augmentation, and feature engineering on a dataset of over 75,000 samples, ensuring data quality and consistency. Employed Python, NumPy, and Pandas to streamline the data pipeline and optimize model performance.</li>
+              <li>Implemented an advanced ensemble model architecture using neural networks to generate high-resolution 3D mesh models from sketches. This process involved model selection, hyperparameter tuning, and cross-validation to maximize reliability and predictive accuracy.</li>
+              <li>Leveraged deep learning frameworks such as TensorFlow and PyTorch to design and deploy a cutting-edge solution for 3D model reconstruction, bringing innovation to the field.</li>
+              <li>Achieved a 30% improvement in model accuracy, outperforming previous state-of-the-art methods. Utilized Matplotlib and Seaborn for detailed visualizations, enabling effective data storytelling and clear communication of insights to stakeholders.</li>
+              <li>Presented a live demo and authored a research paper titled <em>“<a href="https://arxiv.org/abs/2203.03157" target="_blank">SingleSketch2Mesh: Generating 3D Mesh Models from Sketches</a>”</em>.</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Experience Entry 3 -->
+        <div class="experience-entry">
+          <div class="entry-header" onclick="toggleDetails('entry3-details')">
+            <h2 class="experience-company">Data Analyst Intern, Capguide</h2>
+            <p class="experience-duration">September 2019 - December 2019</p>
+          </div>
+          <div class="entry-details" id="entry3-details" style="display: none;">
+            <ul>
+              <li>Engineered a Python-based algorithm to convert unstructured raw data into structured formats, utilizing Pandas and NumPy to enhance data integration and ensure consistency across diverse data sources.</li>
+              <li>Applied data transformation and ETL techniques with SQL and Python, supporting high-quality data analysis and integration.</li>
+              <li>Collaborated with Business Intelligence and Data Analytics teams to extract actionable insights, utilizing SQL and Python to align data findings with strategic objectives and drive impactful business outcomes.</li>
+              <li>Developed and led various advanced data visualizations with Tableau and Matplotlib, effectively presenting complex data insights to stakeholders, enhancing data-driven decision-making across the organization.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script>
+      function toggleDetails(id) {
+        const details = document.getElementById(id);
+        if (details.style.display === "none") {
+          details.style.display = "block";
+        } else {
+          details.style.display = "none";
+        }
+      }
+    </script>
+    
+    
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">LinkedInsight</h2>
+            <div class="project-description">
+            <p> Developed a LinkedIn profile screening application leveraging Python, Streamlit, and OpenAI's LLM API to assist recruiters in evaluating candidates. 
+              The tool parses LinkedIn profiles from URLs to generate concise word summaries, highlights key skills, and provides a Q&A feature for recruiters to ask follow-up questions about candidates. 
+              Designed a friendly UI with input and output fields for seamless interaction.
+          </p>
+          </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project2.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Pixel2Speech</h2>
+            <div class="project-description">
+            <p>Designed an image-to-speech pipeline utilizing pre-trained models and LSTM, achieving 25% improved speech synthesis quality. 
+              Integrated computer vision to interpret image content and text-to-speech for conversion. 
+              Demonstrated expertise in deep learning, multimedia processing, and seamless integration of vision and speech technologies to enable accurate and efficient multimedia conversion.
+          </p>
+          </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project3.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">BottleFinder</h2>
+            <div class="project-description">
+            <p>Built an object detection system using YOLO with TensorFlow to identify bottles of varying styles, sizes, and shapes. 
+              Prepared and annotated custom datasets, fine-tuned the model, and used data augmentation for enhanced performance. 
+              Demonstrated proficiency in deep learning, computer vision, and model evaluation, with applications in inventory and product identification systems.
+          </p>
+          </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+                >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+    
+        <!-- Email -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:dhornalabharadwaj@gmail.com">dhornalabharadwaj@gmail.com</a></p>
+        </div>
+    
+        <!-- LinkedIn -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/bharadwajd/">LinkedIn</a></p>
+        </div>
+    
+        <!-- Phone -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone2.png"
+            alt="Phone icon"
+            class="icon contact-icon phone-icon"
+          />
+          <p><a href="tel:+17043095830">+1-704-309-5830</a></p>
+        </div>
+    
+        <!-- GitHub -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="GitHub icon"
+            class="icon contact-icon github-icon"
+          />
+          <p><a href="https://github.com/bharadwajdhornala">GitHub</a></p>
+        </div>
+
+        <!-- Twitter -->
+         <div class="contact-info-container">
+          <img
+            src="./assets/X.png"
+            alt="Twitter icon"
+            class="icon contact-icon twitter-icon"
+          />
+          <p><a href="https://x.com/BharadwajD0899">Twitter</a></p>
+         </div>
+    
+      </div>
+    </section>
+
+
+
+    <footer class="footer">
+      <h2 class="footer-header">
+        Thank you for visiting my portfolio! <span class="heart">❤️</span>
+      </h2>
+      <p class="footer-message">
+        I truly appreciate your time and interest in my work. Your encouragement and feedback mean the world to me as I continue to grow and improve in this field. 
+        If you have any questions, suggestions, or would like to connect, don't hesitate to reach out. Together, let's build something amazing!
+      </p>
+    </footer>
+  </body>
+</html>
