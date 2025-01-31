@@ -85,5 +85,4 @@ Make the portfolio your own by customizing these files:
 ## **Contact**
 For questions or suggestions, feel free to reach out:
 - **Email**: [dhornalabharadwaj@gmail.com](mailto:dhornalabharadwaj@gmail.com)
-- **GitHub**: [bharadwajdhornala](https://github.com/bharadwajdhornala)
 - **LinkedIn**: [Bharadwaj Dhornala](https://www.linkedin.com/in/bharadwajd/)
