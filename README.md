@@ -3,8 +3,6 @@
 Welcome to my personal portfolio!  
 This website highlights my journey, skills, projects, and experience in **Data Engineering**, **Data Science**, and **Cloud Development**.
 
-🔗 **Live Demo**: Coming Soon!
-
 ---
 
 ## 🔥 About the Portfolio
