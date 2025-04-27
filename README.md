@@ -61,21 +61,17 @@ Portfolio/
 
 ### 1. Clone the repository
 
-```bash
 git clone https://github.com/bharadwajdhornala99/Portfolio.git
 cd Portfolio
 
 ### 2. Install project dependencies
 
-```bash
 npm install
 
 ### 3. Start the local development server
 
-```bash
 npm run dev
 
 ### Then open your browser and navigate to:
 
-```bash
 http://localhost:5173
